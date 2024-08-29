@@ -1,0 +1,34 @@
+## Turtle Start ##
+
+  @prefix : <#>.
+  @prefix cert: <http://www.w3.org/ns/auth/cert#>.
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+  @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+  @prefix dcterms: <http://purl.org/dc/terms/>.
+  @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+  @prefix schema: <http://schema.org/>.
+  @prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+  <>
+    a foaf:PersonalProfileDocument ;
+    foaf:maker <https://admariner.solidcommunity.net/profile/card#me> ;
+    foaf:primaryTopic <https://admariner.solidcommunity.net/profile/card#me> .
+
+  <https://admariner.solidcommunity.net/profile/card#me>
+    a foaf:Person ;
+    a schema:Person ;
+    foaf:name "Periklis Papanikolaou" ;
+    cert:key <https://admariner.solidcommunity.net/profile/card#PublicKey>.
+
+  <https://admariner.solidcommunity.net/profile/card#PublicKey>
+    a cert:RSAPublicKey;
+    dcterms:created "2024-08-29T04:54:39.993Z"^^xsd:dateTime;
+    dcterms:title "Created by YouID";
+    rdfs:label "Periklis Papanikolaou";
+    cert:exponent "65537"^^xsd:int;
+    cert:modulus "AA0FF16B1C60339A5927A61AF686AA8E80DB66611DBDC89527AB1A388943D69638CB219E62404F7997B31D160F2F9FEE96BA10BA8ADF549E905C42B7621C0F965673269CDD6EC2931D9722FDB3365DCCA2D48E91B555B86B32704E85C371E4CEA768681809370AE83B84574847A0356AFBB5C0068B1DACBC9582EA3BD14F9B6FF29B4B47C63CC8CB9BBBD6E5ED3CB13E772DBE8FF389937B7F906C02E3BDA9FA9A9659E5F7AEE6B77B1A8E70CE20557D873F0EFCAE4EA24745B5481B0CA482D02326D4A4DD510B71343FB608C2C0A070BD6346AB479131340D973C7644D892A52A838C26CA1B3579CBAB2CE7E221D8CCD98045EAC655B729DD1E8A7E532F5B21"^^xsd:hexBinary;
+    owl:sameAs <ni:///sha-1;ncT9M8o3LJMHi3E-39uZUyxiDI4>, <di:sha1;ncT9M8o3LJMHi3E-39uZUyxiDI4> . 
+
+
+  
+## Turtle End ##
